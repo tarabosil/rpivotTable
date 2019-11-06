@@ -27,6 +27,7 @@ dependencies:
     - pivot.min.js
     - d3_renderers.min.js
     - c3_renderers.min.js
+    - export_renderers.min.js
     - pivot.cs.min.js
     - pivot.da.min.js
     - pivot.de.min.js
