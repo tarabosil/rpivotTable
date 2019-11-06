@@ -22,14 +22,16 @@ HTMLWidgets.widget({
       var locale = $.pivotUtilities.locales[x.locale];
       locale.renderers = $.extend({}, locale.renderers,
         locale.d3_renderers || $.pivotUtilities.d3_renderers,
-        locale.c3_renderers || $.pivotUtilities.c3_renderers);
+        locale.c3_renderers || $.pivotUtilities.c3_renderers,
+		locale.export_renderers || $.pivotUtilities.export_renderers);
 
       // if subtotals then override renderers to add subtotals
       if(x.subtotals) {
         x.params.renderers = $.extend(
           $.pivotUtilities.subtotal_renderers,
           $.pivotUtilities.d3_renderers,
-          $.pivotUtilities.c3_renderers
+          $.pivotUtilities.c3_renderers,
+		  $.pivotUtilities.export_renderers
         );
         x.params.dataClass = $.pivotUtilities.SubtotalPivotData;
       }

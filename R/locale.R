@@ -33,7 +33,7 @@
 change_locale <- function(
   pivottable = NULL, locale = NULL
 ) {
-  if(!inherits(pivottable,"rpivotTable")) stop("pivottable should be a rpivotTable.",call.=F)
+  if(!inherits(pivottable,"rpivotTableDA")) stop("pivottable should be a rpivotTable.",call.=F)
 
   pivottable$x$locale <- locale
 
