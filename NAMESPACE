@@ -2,6 +2,6 @@
 
 export(change_locale)
 export(renderRpivotTable)
-export(rpivotTableDA)
+export(rpivotTable)
 export(rpivotTableOutput)
 import(htmlwidgets)
