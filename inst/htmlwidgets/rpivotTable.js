@@ -1,5 +1,5 @@
 HTMLWidgets.widget({
-    name: 'rpivotTableDA',
+    name: 'rpivotTable',
     type: 'output',
     initialize: function(el, width, height) {
 	    return {};
