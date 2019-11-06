@@ -92,7 +92,7 @@
 #'
 #' @export
 
-rpivotTableDA <- function(
+rpivotTable <- function(
     data,
     rows = NULL,
     cols = NULL,
@@ -155,12 +155,12 @@ rpivotTableDA <- function(
     )
 
     htmlwidgets::createWidget(
-      name = 'rpivotTableDA',
+      name = 'rpivotTable',
       x,
       width = width,
       height = height,
       elementId = elementId,
-      package = 'rpivotTableDA'
+      package = 'rpivotTable'
     )
 }
 
