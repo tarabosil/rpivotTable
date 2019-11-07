@@ -160,7 +160,7 @@ rpivotTable <- function(
       width = width,
       height = height,
       elementId = elementId,
-      package = 'rpivotTable'
+      package = 'rpivotTableDA'
     )
 }
 
@@ -179,7 +179,7 @@ rpivotTable <- function(
 #'
 #' @export
 rpivotTableOutput <- function(outputId, width = '100%', height = '500px'){
-    shinyWidgetOutput(outputId, 'rpivotTable', width, height, package = 'rpivotTable')
+    shinyWidgetOutput(outputId, 'rpivotTable', width, height, package = 'rpivotTableDA')
 }
 
 #' Widget render function for use in Shiny
